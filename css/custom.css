@@ -1,0 +1,85 @@
+/* FixedFloat.biz custom overrides v2.1 */
+[data-site="fixedfloat-biz"] {
+  --ff-spacing-sm: 0.5rem;
+  --ff-spacing-md: 1rem;
+  --ff-spacing-lg: 2rem;
+  --ff-radius: 8px;
+  --ff-transition: 180ms ease-in-out;
+}
+
+/* Benefits section structure */
+.ff-benefits {
+  position: relative;
+  z-index: 1;
+}
+.ff-benefits .advantages-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ff-spacing-md);
+  align-items: stretch;
+}
+.ff-benefits .advantages-descr p {
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+
+/* Swap form container */
+.ff-swap-form {
+  position: relative;
+  z-index: 2;
+}
+.ff-swap-form h1 {
+  letter-spacing: -0.02em;
+}
+
+/* Help/FAQ section */
+.ff-help {
+  position: relative;
+}
+.ff-help .faq-list > li {
+  transition: var(--ff-transition);
+}
+.ff-help .faq-inner p {
+  line-height: 1.6;
+}
+
+/* Activity section */
+.ff-activity {
+  position: relative;
+  overflow: hidden;
+}
+.ff-activity .recent-list li {
+  transition: opacity var(--ff-transition);
+}
+
+/* Updates section */
+.ff-updates {
+  position: relative;
+}
+.ff-updates .blog-post {
+  transition: transform var(--ff-transition);
+}
+
+/* Tutorials section */
+.ff-tutorials {
+  position: relative;
+}
+.ff-tutorials .blog-post-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Footer keyword paragraph */
+footer .foot-outro p[style*="opacity"] {
+  max-width: 480px;
+  word-spacing: 0.02em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .ff-benefits .advantages-inner {
+    flex-direction: column;
+    gap: var(--ff-spacing-sm);
+  }
+}
