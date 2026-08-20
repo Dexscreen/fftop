@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /data/
+Disallow: /js/
+Disallow: /css/
+
+Sitemap: https://ffio.top/sitemap.xml

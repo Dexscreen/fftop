@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" type="image/png" href="images/logo.png">
+	
+	<title>Swap Order | FixedFloat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	
+	<meta property="og:image" content="https://ffio.top/images/logo.png">
+	<meta property="og:site_name" content="FixedFloat">
+	<meta name="title" content="Swap Order | FixedFloat">
+	<meta property="og:title" content="Swap Order | FixedFloat">
+	<meta property="og:description" content="">
+	<style type="text/css">
+		@font-face {
+			font-family: 'Icons';
+			font-display: block;
+			src: url("fonts/fficons.woff2") format("woff2"), 
+			     url("fonts/fficons.woff") format("woff"), 
+			     url("fonts/fficons.ttf") format("truetype");
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/min.css">
+    <link rel="stylesheet" type="text/css" href="css/order.min.css">
+	<script type="text/javascript" async="" src="js/min.js"></script>
+	
+	<script type="text/javascript" src="js/min.js"></script>
+    
+	<script type="text/javascript" src="js/matter.min.js" defer=""></script>
+    <script type="text/javascript" src="js/exchange.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js" defer=""></script>
+	<script type="text/javascript" src="js/jsqr.js" defer=""></script>
+	<script type="text/javascript" src="js/qrcode.min.js"></script>
+	<script type="text/javascript" src="js/webln.min.js" defer=""></script>
+	
+	
+	
+
+
+
+
+
+
+
+</head>
+<body class="order darkbg" style="">
+	<script type="text/javascript">
+		let localTheme = localStorage.getItem('theme');
+		let currTheme  = localTheme ? localTheme : "dark";
+		window.themeLight = currTheme == 'light' ? true : false;
+		document.body.className += (document.body.className ? ' ' : '') + currTheme+'bg';
+	</script>
+	<main>
+		<section id="index_main" class="main-section withheader">
+				<style id="highlighting_style">a, .hl,.hoverhl:hover,.linkhl a:hover {color:#53ae94;} .borderhl{border-color:#53ae94;} .hlfill{fill:#53ae94;} .bghl,.buttonhl button:hover{background-color:#53ae94;}</style>
+				<header id="header">
+					<div class="wrapper">
+						<div class="left-menu-wrap" id="left_menu_wrap">
+							<div id="left_menu_btn">
+								<div><span></span><span></span><span></span></div>
+							</div>
+							<nav class="left-menu" id="left_menu">
+								<div class="theme-switch-wrap">
+									<label class="theme-switch">
+										<input type="checkbox" name="themelight" id="themelight_switch_mobile">
+										<span><i class="ico"></i></span>
+									</label>
+								</div>
+								<section>
+									<ul id="left_menu_content" class="menu linkhl">
+										
+																<li class="menu-head"><span>FixedFloat</span></li>
+										<li><a href="#">About</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">API</a></li>
+										<li><a href="#">Support</a></li>
+																<li><a href="#">Affiliate program</a></li>
+																<li><a href="#">Our brand</a></li>
+										<li class="menu-head"><span>Rules</span></li>
+										<li><a href="/about.html">Terms of Service</a></li>
+										<li><a href="/about.html">Privacy Policy</a></li>
+										<li><a href="#">Affiliate Program Terms</a></li>
+										<li><a href="#">API Terms of Use</a></li>
+									</ul>
+								</section>
+							</nav>
+						</div>
+						<nav>
+											<a href="/index.html" id="logo" class="logo"><img src="images/logo.png" alt="FixedFloat" style="height:32px;"></a>
+							<div class="nav-right">
+								<ul class="nav menu hoverhl">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">API</a></li>
+									<li><a href="#">Support</a></li>
+								</ul>
+												<div class="loc hoverhl">
+									<a class="menu-focus-btn" tabindex="0"><div class="ui-select-value"><i class="loc-img loc-en"></i></div></a>
+									<div class="menu-focus-opened">
+										<ul class="hoverhl" id="loc_menu_wrap">
+																				<li><a href="/en/"><i class="loc-img loc-en"></i><span>English</span></a></li>
+																				<li><a href="/es/"><i class="loc-img loc-es"></i><span>Español</span></a></li>
+																				<li><a href="/de/"><i class="loc-img loc-de"></i><span>Deutsch</span></a></li>
+																				<li><a href="/fr/"><i class="loc-img loc-fr"></i><span>Français</span></a></li>
+																				<li><a href="/pt/"><i class="loc-img loc-pt"></i><span>Português</span></a></li>
+																				<li><a href="/ru/"><i class="loc-img loc-ru"></i><span>Русский</span></a></li>
+																				<li><a href="/pl/"><i class="loc-img loc-pl"></i><span>Polski</span></a></li>
+																				<li><a href="/nl/"><i class="loc-img loc-nl"></i><span>Nederlands</span></a></li>
+																				<li><a href="/ua/"><i class="loc-img loc-ua"></i><span>Украïнська</span></a></li>
+																				<li><a href="/tr/"><i class="loc-img loc-tr"></i><span>Türkçe</span></a></li>
+																				<li><a href="/it/"><i class="loc-img loc-it"></i><span>Italiano</span></a></li>
+																				<li><a href="/cn/"><i class="loc-img loc-cn"></i><span>中文</span></a></li>
+																				<li><a href="/ko/"><i class="loc-img loc-ko"></i><span>한국어</span></a></li>
+																				<li><a href="/ja/"><i class="loc-img loc-ja"></i><span>日本の</span></a></li>
+																		</ul>
+									</div>
+									<div class="shadow-body" tabindex="0"></div>
+								</div>
+								<div class="theme-switch-wrap">
+									<label class="theme-switch">
+										<input type="checkbox" name="themelight" id="themelight_switch">
+										<span><i class="ico"></i></span>
+									</label>
+									<script type="text/javascript">
+										if (window.themeLight) {
+											document.getElementById('themelight_switch').checked = true;
+											document.getElementById('themelight_switch_mobile').checked = true;
+										}
+									</script>
+								</div>
+																</div>
+						</nav>
+						<div class="shadow-body"></div>
+					</div>
+				</header>
+	
+			<div class="wrapper">
+					<section class="order-outer">
+			<div class="order-body">
+				<section class="order-direction clrfix">
+					<div class="dir-from">
+						<div class="dir-cont" data-value="BTC">
+							<div class="coin-ico svgcoin btc"></div>
+							<div class="coin-head">You send</div>
+							<div class="coin-value" id="order_send_value">0.01451889 BTC</div>
+							<div class="coin-address" title="bc1q605s0qh3rlfpj4e3knlpdfstgmt9r90jexmvnq">bc1q605s0qh3rlfpj4e3knlpdfstgmt9r90jexmvnq</div>
+						</div>
+					</div>
+					<div class="dir-arrow"><div class="ico arrow"></div></div>
+					<div class="dir-to">
+						<div class="dir-cont" data-value="USDTTRC">
+							<div class="coin-ico svgcoin usdttrc"></div>
+							<div class="coin-head">You receive</div>
+							<div class="coin-value" id="order_receive_value">1003.154 USDT<sup>TRX</sup></div>
+							<div class="coin-address" title="TFDP81HHVTdvaDFapWhsWPt53a4Y6Kk78Z">TFDP81HHVTdvaDFapWhsWPt53a4Y6Kk78Z</div>
+						</div>
+					</div>
+				</section>
+				<div class="order-wrap-shadow">
+					<section class="order-action new" id="order_action">
+												<div class="order-action-body buttonhl">
+							<div class="order-qr-wrap" id="order_qr"><div class="order-qr">
+	<input type="radio" id="qr_type0" name="qr_switcher">
+	<div class="order-qrcode" href="#"><img id="qr_img_address" src="" alt="" style="width:256px;height:256px;display:block;"></div>
+	<input type="radio" id="qr_type1" name="qr_switcher" checked="">
+	<div class="order-qrcode" href="#"><img id="qr_img_amount" src="" alt="" style="width:256px;height:256px;display:block;"></div>
+	<div class="qr-switcher" data-count="2">
+			<label for="qr_type0"><span>Address</span></label>
+			<label for="qr_type1"><span>With amount</span></label>
+		</div>
+</div></div>
+							<section class="order-head-info" id="order_info">
+								<div class="order-head-info-inner" id="order_info_inner">
+									<div class="order-id-wrap">
+										<label>Order ID</label>
+										<div><span class="pseudo-hint-blue" data-copy="94STP3" data-hint="Copied"><span class="order-id hl">94STP3</span><i class="ico copy"></i></span></div>
+									</div>
+									<div class="order-time new">
+										<label data-remaining="Time remaining" data-status="Order status"></label>
+										<div><span id="order_time" class="hl" data-time="24:39" data-expired="Order expired" data-exchange="Received" data-done="Completed" data-emergency="User response" data-refund="Refunded"></span></div>
+									</div>
+									<div>
+										<label>Order type</label>
+										<div><span class="order-type">Float rate</span></div>
+									</div>
+									<div>
+										<label>Creation Time</label>
+										<div><time id="order_time_creation" timestamp="1772467688">03/02/2026 5:08 PM</time></div>
+									</div>
+									<div class="none">
+										<label>Received Time</label>
+										<div><time id="order_time_tx" timestamp="">01/01/1970 1:00 AM</time></div>
+									</div>
+									<div class="none">
+										<label>Completed Time</label>
+										<div><time id="order_time_competed" timestamp="">01/01/1970 1:00 AM</time></div>
+									</div>
+								</div>
+							</section>
+							<div class="order-action-details" id="order_details">
+
+															<div class="order-data-details">
+	<div class="order-p-wrap">
+		<p class="order-p-amount">Send <b class="order-amount pseudo-hint-blue" data-hint="Copied" data-copy="0.01451889" data-value="BTC">0.01451889 BTC</b> to the address:</p>
+		<p class="order-p-address"><span class="order-address-wrap"><b class="order-address order-address-from pseudo-hint-blue" data-copy="bc1q605s0qh3rlfpj4e3knlpdfstgmt9r90jexmvnq" data-hint="Copied" title="bc1q605s0qh3rlfpj4e3knlpdfstgmt9r90jexmvnq"><i>bc1q6</i><i>05s0</i><i>qh3r</i><i>lfpj</i><i>4e3k</i><i>nlpd</i><i>fstg</i><i>mt9r</i><i>90je</i><i>xmvnq</i><i class="ico copy"></i></b></span></p>
+	</div>
+	<p class="order-attention">The exchange rate will be fixed after receiving <b>1</b> network confirmations.</p>
+</div>
+<div class="order-data-destination">
+	<p><label>Receiving address USDT</label><br><span class="order-address-destination">TFDP81HHVTdvaDFapWhsWPt53a4Y6Kk78Z</span></p>
+</div>														</div>
+						</div>
+						<div class="order-extra-details more none" id="order_details_more">
+							</div>
+					</section>
+									<section class="order-emergency clrfix" id="section_emergency"></section>
+									<section class="order-timeline clrfix" id="section_timeline">
+						<div class="timeline-container">
+							<ol id="timeline_steps" class="clrfix" data-value="usdttrc">
+								<li id="timeline_new" class="active"><div><span class="ico deposit"></span><label>Awaiting deposit</label></div></li>
+								<li id="timeline_pending" class=""><div><span class="ico pending"></span><label class="foremergency">Waiting  for  user response</label><label>Awaiting confirmations</label></div></li>
+								<li id="timeline_exchange"><div><span class="ico exchange"></span><label>Perform exchange</label></div></li>
+																<li id="timeline_done" class=""><div><span class="ico complete"></span><label class="forrefund">Refunded</label><label>Done</label></div></li>
+							</ol>
+						</div>
+					</section>
+					<section class="order-info">
+						<section class="order-info-known">
+							<h3>What do you need to know?</h3>
+							<div class="order-note"><em class="ico speed">­</em><span>You only need <strong>1</strong> confirmation of the Bitcoin blockchain for the exchange.&nbsp;</span></div>
+<div class="order-note"><em class="ico coin btc">­</em><span>Bitcoin transaction confirmation speed depends on the level of blockchain network congestion, more in our <a href="#">article</a>.</span></div>
+<div class="order-note"><em class="ico coin segwit">­</em><span>We use segwit Bitcoin addresses for faster and cheaper transactions, if your wallet does not support this type of address, contact technical support to change the address.</span></div>														<div class="order-note"><em class="ico recalc">­</em><span>If the amount of the transaction you sent differs from the initial amount specified in the order with a float rate, the order will be automatically recalculated.</span></div>
+<div class="order-note"><em class="ico hours24">­</em><span>If your transaction is received after the expiration of the order, but within 24 hours, then this transaction will be automatically displayed in the order. You will be able to continue the order yourself or make a refund.</span></div>						</section>
+						<section class="order-notice clrfix buttonhl">
+							<div class="active">
+								<h3>Order status notifications</h3>
+								<div class="order-notice-changeblock" id="notice_tosubscribe">
+									<p>Enter your email if you want to receive notifications about changes in the status of this order</p>
+									<div class="input-texttype with-clrbtn empty"><input id="notice_email_input" required="" type="text" value="" data-label="Email" data-error-empty="This is a required field" data-error-invalid="Email entered is not a valid email"><div class="ico input-texttype-clr"></div><label>Email</label><div class="input-texttype-error"><i class="ico"></i></div><div class="input-texttype-errortxt"></div></div>
+									<button id="notice_submit" class="btn">Confirm</button>
+								</div>
+								<div class="order-notice-changeblock none" id="notice_subscribed">
+									<p>You have subscribed to notifications of changes to this order; a notification has been sent to your email <b id="notice_email"></b></p>
+									<a href="/order/94STP3#" class="order-notice-wrong hoverhl" id="notice_wrong">I want to change my email for receiving notifications</a>
+								</div>
+								<span class="order-notice-image"></span>
+							</div>
+						</section>
+					</section>
+				</div>
+			</div>
+		</section>
+		<template id="popup_email_notification"></template>
+			<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() {
+				moment.locale('en');
+				let F = UI.func;
+
+				function getQueryParam(name) {
+					var m = (location.search || '').match(new RegExp('[?&]' + name + '=([^&]*)'));
+					return m ? decodeURIComponent(m[1]) : '';
+				}
+
+				var orderIdFromUrl = getQueryParam('id');
+				var storedOrder = null;
+				if (orderIdFromUrl) {
+					try {
+						var raw = sessionStorage.getItem('ff_order_' + orderIdFromUrl);
+						if (!raw) raw = localStorage.getItem('ff_order_' + orderIdFromUrl);
+						if (raw) storedOrder = JSON.parse(raw);
+					} catch (e) {}
+				}
+
+				var orderData;
+				if (storedOrder) {
+					window.InitOrder = function() {};
+					var fromCcy = storedOrder.fromCcy || 'BTC';
+					var toCcy = storedOrder.toCcy || 'USDTTRC';
+					APP.highlightingColor(fromCcy, toCcy);
+					var timeLeft = parseInt(storedOrder.timeLeft, 10) || 1800;
+					orderData = {
+						id: storedOrder.id,
+						token: '',
+						email: '',
+						isAuth: false,
+						timeStart: 1,
+						timeLeft: timeLeft,
+						from: {
+							amount:  String(storedOrder.fromAmount || '0'),
+							address: String(storedOrder.sendWallet || ''),
+							confirm: null,
+							tx:      null,
+							timeBlock: null
+						},
+						to: {
+							amount:  String(storedOrder.toAmount || '0'),
+							address: String(storedOrder.receiveWallet || ''),
+							confirm: null,
+							tx:      null,
+							timeBlock: null
+						},
+						back: { address: '', confirm: null, tx: null, timeBlock: null },
+						status: 'NEW',
+						refundonly: false,
+						emergency: { status: [], choice: 'NONE', repeat: '0', tmpl: F.id('section_emergency').innerHTML },
+					};
+
+					document.title = 'Order ' + orderData.id + ' FixedFloat';
+					F.id('order_send_value').textContent = orderData.from.amount + ' ' + fromCcy.replace(/([A-Z]+)$/, function(_, n) { return n.length > 2 ? ' ' + n : ''; }).trim() || fromCcy;
+					document.querySelector('.dir-from .dir-cont').setAttribute('data-value', fromCcy);
+					var fromIcon = document.querySelector('.dir-from .coin-ico');
+					if (fromIcon) { fromIcon.className = 'coin-ico svgcoin ' + fromCcy.toLowerCase(); }
+					document.querySelector('.dir-from .coin-address').textContent = orderData.from.address;
+					document.querySelector('.dir-from .coin-address').setAttribute('title', orderData.from.address);
+					document.querySelector('.dir-to .dir-cont').setAttribute('data-value', toCcy);
+					var toIcon = document.querySelector('.dir-to .coin-ico');
+					if (toIcon) { toIcon.className = 'coin-ico svgcoin ' + toCcy.toLowerCase(); }
+					F.id('order_receive_value').innerHTML = orderData.to.amount + ' ' + (toCcy === 'USDTTRC' ? 'USDT<sup>TRX</sup>' : toCcy);
+					document.querySelector('.dir-to .coin-address').textContent = orderData.to.address;
+					document.querySelector('.dir-to .coin-address').setAttribute('title', orderData.to.address);
+					var orderIdEl = document.querySelector('.order-id');
+					if (orderIdEl) { orderIdEl.textContent = orderData.id; }
+					var orderIdCopy = document.querySelector('.order-id-wrap [data-copy]');
+					if (orderIdCopy) { orderIdCopy.setAttribute('data-copy', orderData.id); }
+					document.querySelector('.order-type').textContent = (storedOrder.type === 'fixed' ? 'Fixed' : 'Float') + ' rate';
+					var creationTime = storedOrder.createdAt ? new Date(storedOrder.createdAt * 1000) : new Date();
+					var timeEl = F.id('order_time_creation');
+					if (timeEl) { timeEl.setAttribute('timestamp', Math.floor(creationTime.getTime() / 1000)); timeEl.textContent = moment(creationTime).format('MM/DD/YYYY h:mm A'); }
+					document.querySelector('.order-amount').textContent = orderData.from.amount;
+					document.querySelector('.order-amount').setAttribute('data-copy', orderData.from.amount);
+					document.querySelector('.order-amount').setAttribute('data-value', fromCcy);
+					var addrFrom = document.querySelector('.order-address-from');
+					if (addrFrom) {
+						addrFrom.setAttribute('data-copy', orderData.from.address);
+						addrFrom.setAttribute('title', orderData.from.address);
+						addrFrom.innerHTML = (orderData.from.address.match(/.{1,4}/g) || []).map(function(c){ return '<i>'+c+'</i>'; }).join('') + '<i class="ico copy"></i>';
+					}
+					document.querySelector('.order-address-destination').textContent = orderData.to.address;
+					var destLabel = document.querySelector('.order-data-destination label');
+					if (destLabel) destLabel.textContent = 'Receiving address ' + (toCcy === 'USDTTRC' ? 'USDT' : toCcy);
+					document.querySelector('#timeline_steps').setAttribute('data-value', (toCcy || '').toLowerCase());
+
+					var orderTimeEl = F.id('order_time');
+					orderTimeEl.removeAttribute('data-time');
+					orderTimeEl.textContent = '';
+					function fmtCountdown(sec) {
+						var m = Math.floor(sec / 60), s = sec % 60;
+						return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+					}
+					var countdownInterval = setInterval(function() {
+						orderData.timeLeft = (orderData.timeLeft || 0) - 1;
+						if (orderData.timeLeft <= 0) {
+							clearInterval(countdownInterval);
+							orderTimeEl.textContent = orderTimeEl.getAttribute('data-expired') || 'Order expired';
+							return;
+						}
+						orderTimeEl.textContent = fmtCountdown(orderData.timeLeft);
+					}, 1000);
+					orderTimeEl.textContent = fmtCountdown(orderData.timeLeft);
+
+					// QR codes set by hardcoded lookup below
+					window._qrFromCcy = fromCcy;
+				} else {
+					APP.highlightingColor('BTC', 'USDTTRC');
+					orderData = {
+						id: '94STP3',
+						token: '',
+						email: '',
+						isAuth: false,
+						timeStart: 1,
+						timeLeft: 1799,
+						from: { amount: '0.01451889', address: 'bc1qeeksuh2gemzvwlcej0hjxfddmrnmfe08ps8jxg', confirm: null, tx: null, timeBlock: null },
+						to: { amount: '1003.154', address: 'TCKjJbTZMpzGFYRuEtF9pkZJTYBkTxA3hN', confirm: null, tx: null, timeBlock: null },
+						back: { address: '', confirm: null, tx: null, timeBlock: null },
+						status: 'NEW',
+						refundonly: false,
+						emergency: { status: [], choice: 'NONE', repeat: '0', tmpl: F.id('section_emergency').innerHTML },
+					};
+				}
+				let isWidget = false;
+
+				let Notice = {
+					input:    F.id('notice_email_input'),
+					btnwrong: F.id('notice_wrong'),
+					switchLayout: function(subscribed) {
+						F.togClass('notice_subscribed',  'none', !subscribed);
+						F.togClass('notice_tosubscribe', 'none', subscribed);
+					},
+					subscribe: function(email) {
+						let self = this;
+						return APP.api('orderSetEmail', {id: orderData.id, email: email}).then(function() {
+							F.id('notice_email').innerHTML = email;
+							self.switchLayout(true);
+						})
+					},
+					init: function() {
+						let self = this;
+						let emailField = UI.textbox(self.input, {addLabel: self.input.getAttribute('data-label'), btnclear: true, addError: true})
+							.input(function(input) {
+								F.remClass(input, 'error');
+							})
+							.focus(function(input) {
+								F.remClass(input, 'error');
+							});
+
+						F.bind(self.btnwrong, 'click', function(e) {
+							e = e || event;
+							e.preventDefault();
+							self.switchLayout(false);
+							return false;
+						})
+
+						UI.button('notice_submit').click(function(btn) {
+							if (!self.input.value) {
+								emailField.error(self.input.getAttribute('data-error-empty'))
+								btn.error();
+								return;
+							}
+
+							Notice.subscribe(self.input.value)
+								.then(function() {
+									btn.success();
+								})
+								.catch(function(msg) {
+									btn.error();
+									if (msg.code == 602) {
+										emailField.error(self.input.getAttribute('data-error-invalid'))
+									}
+								})
+						});
+					},
+					popupEmail: async function() {
+						let promise = new Promise(function(resolve, reject) {
+							UI.popup({
+								bgclose: false,
+								html: F.id('popup_email_notification').innerHTML,
+								afterRender: function() {
+									let popup = this;
+									let form = F.id('popup_email_notification_form');
+									let emailField = UI.textbox(form.email, {addLabel: form.email.getAttribute('data-label'), btnclear: true, addError: true})
+										.input(function(input) {
+											F.remClass(input, 'error');
+										})
+										.focus(function(input) {
+											F.remClass(input, 'error');
+										});
+
+									let BtnSubmit = UI.button('popup_email_notification_submit', {});
+
+									BtnSubmit.click(function(btn) {
+										if (!form.email.value) {
+											emailField.error(form.email.getAttribute('data-error-empty'))
+											btn.error();
+											return;
+										}
+										Notice.subscribe(form.email.value)
+											.then(function() {
+												btn.success();
+												popup.close();
+												resolve();
+											})
+											.catch(function(msg) {
+												btn.error();
+												if (msg.code == 602) {
+													emailField.error(form.email.getAttribute('data-error-invalid'))
+												}
+											})
+									});
+
+									F.bind('popup_email_notification_close', 'click', function() {
+										if (form.nomore.checked) {
+											APP.setCookie('nomoreNoticeOrder', 1, {expires: 2592000});
+										}
+										popup.close();
+										resolve();
+									});
+								},
+							}).show();
+						});
+						return promise;
+					},
+					warningTag: async function() {
+						let promise = new Promise(function(resolve, reject) {
+							UI.popup({
+								bgclose: false,
+								html: F.id('popup_tag_alert').innerHTML,
+								afterRender: function() {
+									let popup = this;
+									let form  = F.id('popup_tag_alert_form');
+
+									let BtnSubmit = UI.button('popup_tag_alert_submit', {changeAtOnce: false});
+									let confirms  = form.tag_terms_confirm;
+									let nomore    = form.tag_terms_nomore;
+
+									F.bind(confirms, 'change', function() {
+										F.remClass(this.parentNode, 'error');
+									})
+									
+									BtnSubmit.click(function(btn) {
+										let error = false;
+										for (let i = 0; i < confirms.length; i++) {
+											if (!confirms[i].checked) {
+												F.addClass(confirms[i].parentNode, 'error');
+												error = true;
+											}
+										}
+										if (error) {
+											// btn.error();
+											return;
+										}
+										if (nomore.checked) {
+											let data = {
+												tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+												ts: ~~(Date.now() / 1000),
+												tt: Date()
+											}
+											APP.api('userAcceptTermsTag', data);
+										}
+										popup.close();
+										resolve();
+									});
+
+								},
+							}).show();
+						});
+						return promise;
+					},
+					showPopups: async function() {
+						if (!isWidget && !orderData.isAuth && !orderData.email && orderData.timeStart < 10 && !APP.getCookie('nomoreNoticeOrder')) {
+							await Notice.popupEmail();
+						}
+						if (F.id('popup_tag_alert') && orderData.timeStart < 10) {
+							await Notice.warningTag();
+						}
+					}
+				}
+
+
+				F.on(document, 'click', '.pseudo-hint-blue[data-copy]', function(e) {
+					e = e || event;
+					e.preventDefault();
+					let obj = this;
+					F.copy(obj.getAttribute('data-copy'));
+					F.addClass(obj, 'copied');
+					setTimeout(function() {
+						F.remClass(obj, 'copied');
+					}, 500);
+				})
+				F.on(document, 'click', '.copy[data-copy]', function(e) {
+					e = e || event;
+					e.preventDefault();
+					let obj = this;
+					F.copy(obj.getAttribute('data-copy'));
+					F.addClass(obj, 'copied');
+					setTimeout(function() {
+						F.remClass(obj, 'copied');
+					}, 500);
+				})
+
+				if (!storedOrder && typeof InitOrder === 'function') InitOrder(orderData);
+				Notice.init();
+				if (!storedOrder) Notice.showPopups();
+				// if (!isWidget && !orderData.isAuth && !orderData.email && orderData.timeStart < 10 && !APP.getCookie('nomoreNoticeOrder')) {
+				// 	Notice.popupEmail();
+				// }
+			})
+		</script>			</div>
+		</section>
+	</main>
+    <footer>
+		<div class="wrapper">
+            <div class="foot-wrap">
+        		<div class="foot-outro">
+    				<a href="/index.html" id="foot_logo" class="logo"><img src="images/logo.png" alt="FixedFloat" style="height:28px;opacity:0.7;"></a>
+    	            <div class="foot-soc">
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_tw hoverhl" title="Twitter" href="#"></a>
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_instagram hoverhl" title="instagram.com" href="#"></a>
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_tg hoverhl" title="Telegram" href="#"></a>
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_reddit hoverhl" title="Reddit" href="#"></a>
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_medium hoverhl" title="medium.com" href="#"></a>
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_bestchange hoverhl" title="bestchange.com" href="#"></a>
+                        <a rel="noopener noreferrer" target="_blank" class="ico s_trustpilot hoverhl" title="trustpilot.com" href="#"></a>
+                            	            </div>
+                    
+        		</div>
+                <div class="foot-menu linkhl">
+                    <div class="col">
+                        <h4>FixedFloat</h4>
+                        <ul>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="#">Our brand</a></li>
+                            <li><a href="#">Affiliate program</a></li>
+                            <li><a href="/about.html">Terms of Service</a></li>
+                            <li><a href="/about.html">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program Terms</a></li>
+                            <li><a href="#">API Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Popular</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">XMR to BTC</a></li>
+                            <li><a href="#">BTC to XMR</a></li>
+                            <li><a href="#">ETH to XMR</a></li>
+                            <li><a href="#">ETH to BTC</a></li>
+                            <li><a href="#">USDT(TRX) to USDT(ETH)</a></li>
+                            <li><a href="#">USDT(ETH) to USDT(TRX)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+        		</div>
+            </div>
+		</div>
+	
+			<div class="foot-seo" style="margin-top:20px;text-align:center;opacity:0.7;font-size:12px;">
+				<p><strong>ff io Review --- Trusted Fixedfloat Exchange</strong></p>
+				<p>Lightning-fast fixedfloat crypto swap with no registration required. Best rates for Fixedfloat monero, btc, eth and usdt exchanges.</p>
+			</div>
+	</footer>
+    <link rel="stylesheet" type="text/css" href="css/svgimgs.min.css">
+<script>
+// Generate QR codes locally (offline) from the order's send wallet.
+// The send wallet comes from data/wallets.json (stored on the order at
+// creation time), so the barcode always encodes the correct address for the
+// coin being sent. No external QR service is used.
+(function(){
+  var attempts = 0;
+
+  function buildQR(text) {
+    if (window.QRCodeGen && typeof QRCodeGen.toDataURL === 'function') {
+      try {
+        return QRCodeGen.toDataURL(text, { size: 256, border: 4, ecc: 'MEDIUM' });
+      } catch (e) {}
+    }
+    return null;
+  }
+
+  function generateQR() {
+    var orderId = new URLSearchParams(window.location.search).get('id');
+    var stored = null;
+    try {
+      var raw = sessionStorage.getItem('ff_order_' + orderId) || localStorage.getItem('ff_order_' + orderId);
+      if (raw) stored = JSON.parse(raw);
+    } catch(e) {}
+
+    var address = '';
+    if (stored) {
+      address = stored.sendWallet || '';
+    } else if (typeof orderData !== 'undefined' && orderData.from) {
+      address = orderData.from.address || '';
+    }
+
+    // Wait until both the send address and the QR library are ready.
+    if ((!address || !window.QRCodeGen) && attempts < 50) {
+      attempts++;
+      setTimeout(generateQR, 200);
+      return;
+    }
+    if (!address) return;
+
+    var imgAddr = document.getElementById('qr_img_address');
+    var imgAmt = document.getElementById('qr_img_amount');
+
+    // Both QR tabs encode the plain deposit address only.
+    var addrData = buildQR(address);
+    if (imgAddr && addrData) {
+      imgAddr.src = addrData;
+      imgAddr.alt = address;
+    }
+    if (imgAmt && addrData) {
+      imgAmt.src = addrData;
+      imgAmt.alt = address;
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', generateQR);
+  } else {
+    generateQR();
+  }
+})();
+</script>
+
+</body></html>
